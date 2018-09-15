@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>WEB-HTML</title>
+
   <style>
     h1 {
       border-bottom:10px solid red;
@@ -14,6 +15,10 @@
       display: grid;
       grid-template-columns: 170px 1fr;
     }
+
+    input {
+      font-size: 50px;
+    }
   </style>
 </head>
 <body>
@@ -24,6 +29,23 @@
     <li>CSS</li>
   </ol>
   <div>
+    <script>
+      function dayNightToggle(self){
+        if(self.value === 'night'){
+        var bodyTag = document.querySelctor('body');
+        bodyTag.style.backgroundColor = 'black';
+        bodyTag.style.color = 'white';
+        self.value = 'day';
+    } else {
+      var bodyTag = document.querySelctor('body');
+      bodyTag.style.backgroundColor = 'white';
+      bodyTag.style.color = 'black';
+      self.value = 'night';
+    }
+  }
+    </script>
+    <input type="button" value="night" onclick="
+      dayNightToggle(this); ">
   <h2>HTML</h2>
   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit illo velit quae sint totam aut ipsa odit fugit assumenda? Nam dolorum minus ducimus laborum ut delectus sint asperiores, ipsa porro.
   </div>
