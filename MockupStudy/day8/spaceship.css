@@ -1,0 +1,28 @@
+div{
+  width:100px;
+  height: 100px;
+  background: url("spaceship.png");
+  background-size:cover;
+  transform:translate(0);
+  animation: spaceship 3s infinite;
+}
+body{
+  background: #000;
+}
+@keyframes spaceship{
+  from{
+   transform:translate(0) rotate(0);
+  }
+  25%{
+   transform:translate(0,200px) ;
+  }
+  50%{
+   transform:translate(300px, 200px) rotate(-90deg);
+  }
+  75%{
+   transform:translate(300px, 0px) rotate(-180deg);
+  }
+  to{
+   transform:translate(0);
+  }
+}
